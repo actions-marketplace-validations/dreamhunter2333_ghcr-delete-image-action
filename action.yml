@@ -1,4 +1,4 @@
-name: GHCR Delete Image
+name: GHCR Delete Image for User
 
 description: >
   Delete images from ghcr.io with different strategies.
