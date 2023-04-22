@@ -93,11 +93,11 @@ let findPackageVersionsUntaggedOrderGreaterThan = async function (
 
 let iteratePackageVersions = async function* (octokit, owner, name) {
   for await (const response of octokit.paginate.iterator(
-    octokit.rest.packages.getAllPackageVersionsForPackageOwnedByOrg,
+    octokit.rest.packages.getAllPackageVersionsForPackageOwnedByUser,
     {
       package_type: "container",
       package_name: name,
-      org: owner,
+      username: owner,
       state: "active",
       per_page: 100,
     }
@@ -109,10 +109,10 @@ let iteratePackageVersions = async function* (octokit, owner, name) {
 };
 
 let deletePackageVersion = async (octokit, owner, name, versionId) => {
-  await octokit.rest.packages.deletePackageVersionForOrg({
+  await octokit.rest.packages.deletePackageVersionForUser({
     package_type: "container",
     package_name: name,
-    org: owner,
+    username: owner,
     package_version_id: versionId,
   });
 };
