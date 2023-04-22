@@ -97,9 +97,7 @@ let iteratePackageVersions = async function* (octokit, owner, name) {
     {
       package_type: "container",
       package_name: name,
-      username: owner,
-      state: "active",
-      per_page: 100,
+      username: owner
     }
   )) {
     for (let packageVersion of response.data) {
