@@ -5,8 +5,8 @@ dependencies:
     specifier: ^1.4.0
     version: 1.4.0
   '@actions/github':
-    specifier: ^5.0.0
-    version: 5.0.0
+    specifier: ^5.1.1
+    version: 5.1.1
 
 devDependencies:
   '@vercel/ncc':
@@ -28,10 +28,10 @@ packages:
     resolution: {integrity: sha512-CGx2ilGq5i7zSLgiiGUtBCxhRRxibJYU6Fim0Q1Wg2aQL2LTnF27zbqZOrxfvFQ55eSBW0L8uVStgtKMpa0Qlg==}
     dev: false
 
-  /@actions/github@5.0.0:
-    resolution: {integrity: sha512-QvE9eAAfEsS+yOOk0cylLBIO/d6WyWIOvsxxzdrPFaud39G6BOkUwScXZn1iBzQzHyu9SBkkLSWlohDWdsasAQ==}
+  /@actions/github@5.1.1:
+    resolution: {integrity: sha512-Nk59rMDoJaV+mHCOJPXuvB1zIbomlKS0dmSIqPGxd0enAXBnOfn4VWF+CGtRCwXZG9Epa54tZA7VIRlJDS8A6g==}
     dependencies:
-      '@actions/http-client': 1.0.11
+      '@actions/http-client': 2.1.0
       '@octokit/core': 3.6.0
       '@octokit/plugin-paginate-rest': 2.21.3(@octokit/core@3.6.0)
       '@octokit/plugin-rest-endpoint-methods': 5.16.2(@octokit/core@3.6.0)
@@ -39,8 +39,8 @@ packages:
       - encoding
     dev: false
 
-  /@actions/http-client@1.0.11:
-    resolution: {integrity: sha512-VRYHGQV1rqnROJqdMvGUbY/Kn8vriQe/F9HR2AlYHzmKuM/p3kjNuXhmdBfcVgsvRWTz5C5XW5xvndZrVBuAYg==}
+  /@actions/http-client@2.1.0:
+    resolution: {integrity: sha512-BonhODnXr3amchh4qkmjPMUO8mFi/zLaaCeCAJZqch8iQqyDnVIkySjB38VHAC8IJ+bnlgfOqlhpyCUZHlQsqw==}
     dependencies:
       tunnel: 0.0.6
     dev: false
