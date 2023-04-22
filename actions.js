@@ -24,13 +24,12 @@ async function deleteByTag(config, octokit) {
 }
 
 async function deleteUntaggedOrderGreaterThan(config, octokit) {
-  core.info(`🔎 find not latest ${config.untaggedKeepLatest} packages...`);
+  core.info(`🔎 finding latest untagged packages...`);
 
   const pkgs = await utils.findPackageVersionsUntaggedOrderGreaterThan(
     octokit,
     config.owner,
-    config.name,
-    config.untaggedKeepLatest
+    config.name
   );
 
   core.startGroup(`🗑 delete ${pkgs.length} packages`);
